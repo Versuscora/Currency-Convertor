@@ -23,7 +23,7 @@ const updateRate =async()=>{
    console.log(rate);
    let finalAmount = amount.value*rate;
   //  console.log(finalAmount);
-   msg.innerText = `${amount.value}${fromCurr.value} = ${finalAmount} ${toCurr.value}`;
+   msg.innerText = `${amount.value} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;
 }
 
 for (let select of dropdown){
