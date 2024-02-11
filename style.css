@@ -8,7 +8,8 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f4e4ba ;
+    background-color: #323C57
+    ;
     
 
 }
@@ -21,6 +22,8 @@ body{
     min-height:45vh;
     border-radius: 1rem;
     padding: 2rem;
+    font-size: 1.2rem;
+    font-family: sans-serif;
    
 }
 form{
@@ -35,8 +38,8 @@ form ,select,button,input{
 }
 form input{
 
-    border: 1px solid lightblue;
-    font-size: 1rem;
+    border: 1px solid lightslategray;
+    font-size: 1.2rem;
     height: 3rem;
     padding-left: 0.5rem;
 }
@@ -59,7 +62,7 @@ form input{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid lightblue;
+    border: 1px solid lightslategray;
     border-radius: 0.5rem;
     width: 6rem;
     
