@@ -1,122 +1,91 @@
-/* Body and Background */
-body {
-    background: linear-gradient(to right, #f3e5f5, #e1bee7); /* Subtle purple gradient */
-    font-family: 'Poppins', sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(to right, #f3e5f5, #e1bee7);
+
 }
 
-/* Currency Converter Container */
-.container {
-    background-color: #ffffff; /* White background */
-    padding: 20px 25px;
-    border-radius: 10px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Stronger shadow for depth */
-    width: 320px; /* Narrower container */
-    text-align: center;
-    box-sizing: border-box;
+h1{
+    background-color:#6a1b9a;
 }
-
-/* Heading */
-h1 {
-    font-size: 1.8rem;
-    color: #6a1b9a; /* Dark purple */
-    margin-bottom: 20px;
-    font-weight: 600;
+.amount{
+    font-size: 1rem;
 }
+.container{
+    background-color:#fff;
+    width: 40vh;
+    min-height:45vh;
+    border-radius: 1rem;
+    padding: 2rem;
+    font-size: 1rem;
+    font-family: sans-serif;
+   
+}
+form{
+    margin:2rem 0 1rem 0;
 
-/* Input Field Styling */
-input[type="number"] {
+}
+form ,select,button,input{
     width: 100%;
-    padding: 12px;
-    font-size: 1.1rem;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-    background-color: #f9f9f9;
+    border: none;
+    border-radius: 0.75rem;
     outline: none;
-    transition: all 0.2s ease;
 }
-
-/* On Focus Input Effect */
-input[type="number"]:focus {
-    border-color: #8e24aa; /* Highlight color */
+form input{
+    background-color: #f9f9f9;
+    border: 1px solid lightslategray;
+    font-size: 1.2rem;
+    height: 3rem;
+    padding-left: 0.5rem;
 }
-
-/* Dropdown Container */
-.select-container {
-    display: flex;
+.dropdown{
+    display:flex ;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
-}
-
-/* Select Styling */
-select {
-    width: 42%;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    background-color: #ffffff;
-    font-size: 1rem;
-    appearance: none;
-    cursor: pointer;
-}
-
-/* Swap Icon */
-.swap-icon {
+    margin-top: 2rem;
+    
+}   
+.dropdown i{
     font-size: 1.5rem;
-    color: #8e24aa; /* Purple color */
-    cursor: pointer;
-    transition: transform 0.3s ease;
+    margin-top: 1rem;
+}
+.select-container img {
+    max-width: 1.75rem;
+
+}
+.select-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightslategray;
+    border-radius: 0.5rem;
+    width: 6rem;
+    
+}
+.select-container select{
+    font-size: 1rem;
+    width: auto;
+}
+.msg{
+    margin: 2rem 0 2rem 0;
 }
 
-.swap-icon:hover {
-    transform: rotate(180deg); /* Rotation effect */
+form button{
+ height: 3rem;
+ background-color: #8e24aa;
+ color: #f4e4ba;
+ font-size: 1.15rem;
+ cursor: pointer;
 }
 
-/* Button Styling */
-button {
-    background-color: #8e24aa; /* Purple */
-    color: white;
-    font-size: 1.2rem;
-    border: none;
-    padding: 12px;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 100%;
-    font-weight: 600;
-    transition: background-color 0.3s ease-in-out;
-}
-
-/* Button Hover */
-button:hover {
+form button:hover{
     background-color: #6a1b9a; /* Darker purple */
 }
-
-/* Result */
-.result {
-    margin-top: 15px;
-    color: #6a1b9a;
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-/* Responsive Design */
-@media (max-width: 480px) {
-    .container {
-        width: 90%;
-    }
-
-    .select-container {
-        flex-direction: column;
-    }
-
-    select {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-}
+    
