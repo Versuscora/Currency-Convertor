@@ -9,11 +9,11 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #2d3e50;
+    background-color: #F5EDED;
 }
 
 .container {
-    background-color: #f8f9fa;
+    background-color: #E2DAD6;
     width: 90vh; /* Increased width */
     min-height: 55vh; /* Adjusted height */
     border-radius: 1rem;
@@ -23,7 +23,7 @@ body {
 }
 
 h2 {
-    color: #16a085;
+    color: #6482AD;
     text-align: center;
 }
 
@@ -62,42 +62,42 @@ form input {
     color: #16a085;
 }
 
-.select-container img {
-    max-width: 1.75rem; /* Smaller flag for better fit */
-    margin-right: 0.5rem; /* Added margin for spacing */
-}
-
+/* Increase the width of the select container and adjust padding */
 .select-container {
     display: flex;
-    justify-content: center;
     align-items: center;
-    border: 1px solid #ced6e0;
+    border: 1px solid lightslategray;
     border-radius: 0.5rem;
-    width: 100%; /* Adjusted width to fill select container */
-    padding: 0.5rem; /* Added padding for better alignment */
-    margin: 0.5rem 0; /* Added margin for spacing */
+    padding: 0.5rem;  /* Updated padding for better spacing */
+    width: 60%;       /* Updated width to accommodate flag and dropdown comfortably */
 }
 
+.select-container img {
+    max-width: 1.75rem; /* Ensure the flag images are not too large */
+    margin-right: 0.5rem; /* Adds a bit of space between the flag and the dropdown */
+}
+
+/* Ensure the dropdown takes the remaining width */
 .select-container select {
-    font-size: 1rem;
-    width: auto;
-    background-color: transparent;
+    width: calc(100% - 2rem); /* Subtracting the approximate width of the flag and padding */
+    border: none;  /* Removing any default styling */
 }
 
-.msg {
-    margin: 2rem 0;
-    font-size: 1.2rem;
-    color: #2c3e50;
-    text-align: center;
-}
-
-form button {
+/* Adjusting form elements to ensure alignment and uniformity */
+form select, form button, form input {
     height: 3rem;
-    background-color: #16a085;
-    color: #f8f9fa;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+/* Styling for the button to ensure it's centered and visually appealing */
+form button {
+    background-color: #6482AD;  /* A greener shade for a fresh look */
+    color: white;
     font-size: 1.15rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    border: none; /* Removing default borders */
 }
 
 form button:hover {
