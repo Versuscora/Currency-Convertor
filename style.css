@@ -1,136 +1,122 @@
-/* Overall Background */
+/* Body and Background */
 body {
-    background: linear-gradient(135deg, #f3e5f5, #e1bee7); /* Light purple gradient */
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+    background: linear-gradient(to right, #f3e5f5, #e1bee7); /* Subtle purple gradient */
+    font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
 }
 
-/* Container for Currency Converter */
+/* Currency Converter Container */
 .container {
-    background-color: #fafafa; /* Light grey background */
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Slightly heavier shadow for depth */
-    padding: 2rem;
-    width: 360px; /* Slightly wider for better layout */
+    background-color: #ffffff; /* White background */
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Stronger shadow for depth */
+    width: 320px; /* Narrower container */
     text-align: center;
-    margin: auto;
+    box-sizing: border-box;
 }
 
-/* Currency Converter Title */
+/* Heading */
 h1 {
+    font-size: 1.8rem;
     color: #6a1b9a; /* Dark purple */
-    font-size: 1.8rem; /* Slightly larger */
+    margin-bottom: 20px;
     font-weight: 600;
-    margin-bottom: 1.5rem;
 }
 
 /* Input Field Styling */
 input[type="number"] {
     width: 100%;
     padding: 12px;
-    font-size: 1.2rem;
-    border-radius: 8px;
-    border: 1px solid #d1d1d1;
-    margin-bottom: 1.2rem;
-    outline: none;
-    background-color: #f9f9f9;
-    box-sizing: border-box;
-}
-
-/* Label for Amount */
-label {
-    display: block;
-    color: #8e24aa;
     font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-    text-align: left;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: all 0.2s ease;
 }
 
-/* Dropdown Containers */
+/* On Focus Input Effect */
+input[type="number"]:focus {
+    border-color: #8e24aa; /* Highlight color */
+}
+
+/* Dropdown Container */
 .select-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
 }
 
-/* Dropdowns Styling */
+/* Select Styling */
 select {
-    width: 40%;
-    padding: 8px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #d1d1d1;
+    width: 42%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
     background-color: #ffffff;
+    font-size: 1rem;
     appearance: none;
-}
-
-/* Flag Image Styling */
-.select-container img {
-    width: 25px;
-    margin-right: 10px;
-    vertical-align: middle;
+    cursor: pointer;
 }
 
 /* Swap Icon */
 .swap-icon {
     font-size: 1.5rem;
-    color: #8e24aa; /* Medium purple */
+    color: #8e24aa; /* Purple color */
     cursor: pointer;
-    padding: 0 10px;
-    transition: color 0.3s ease-in-out;
+    transition: transform 0.3s ease;
 }
 
 .swap-icon:hover {
-    color: #6a1b9a; /* Darker purple */
+    transform: rotate(180deg); /* Rotation effect */
 }
 
-/* Get Exchange Rates Button */
+/* Button Styling */
 button {
-    background-color: #ab47bc;
+    background-color: #8e24aa; /* Purple */
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     border: none;
     padding: 12px;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
     width: 100%;
-    margin-top: 1.5rem;
-    font-weight: bold;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out;
 }
 
-/* Button Hover Effect */
+/* Button Hover */
 button:hover {
-    background-color: #8e24aa;
+    background-color: #6a1b9a; /* Darker purple */
 }
 
-/* Result Display */
+/* Result */
 .result {
+    margin-top: 15px;
     color: #6a1b9a;
     font-size: 1.2rem;
-    margin-top: 1rem;
+    font-weight: 500;
 }
 
-/* Adjust layout on smaller screens */
+/* Responsive Design */
 @media (max-width: 480px) {
     .container {
-        width: 100%;
-        padding: 1.5rem;
+        width: 90%;
     }
 
     .select-container {
         flex-direction: column;
-        align-items: flex-start;
     }
 
     select {
         width: 100%;
-        margin-top: 8px;
+        margin-bottom: 10px;
     }
 }
