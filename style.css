@@ -1,6 +1,6 @@
 /* Overall Background */
 body {
-    background: linear-gradient(135deg, #e0f7fa, #ffffff); /* Light blue and white gradient */
+    background: linear-gradient(135deg, #f3e5f5, #e1bee7); /* Light purple gradient */
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -12,26 +12,26 @@ body {
 
 /* Container for Currency Converter */
 .container {
-    background-color: #ffffff; /* Soft white background */
+    background-color: #fafafa; /* Light grey background for contrast */
     border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    padding: 2rem;
-    width: 350px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 1.5rem;
+    width: 300px; /* Reduced width */
     text-align: center;
     margin: auto;
 }
 
 /* Currency Converter Title */
 h1 {
-    color: #004d40; /* Deep teal for title */
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
+    color: #6a1b9a; /* Dark purple for title */
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
 }
 
 /* Input Field Styling */
 input[type="number"] {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     font-size: 1.1rem;
     border-radius: 5px;
     border: 1px solid #cccccc;
@@ -48,8 +48,8 @@ input[type="number"] {
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
-    background-color: #ffffff; /* White background for dropdown */
-    width: 140px;
+    background-color: #ffffff;
+    width: 120px; /* Reduced width for dropdowns */
 }
 
 /* Dropdowns */
@@ -63,46 +63,46 @@ select {
 
 /* Flag Image Styling */
 .select-container img {
-    width: 24px; /* Ensure flag fits perfectly */
+    width: 20px; /* Adjust flag size */
     margin-right: 8px;
     vertical-align: middle;
 }
 
 /* Exchange Icon Styling */
 .swap-icon {
-    font-size: 1.5rem;
-    color: #009688; /* Teal color */
+    font-size: 1.3rem;
+    color: #8e24aa; /* Lighter purple for swap icon */
     cursor: pointer;
     transition: color 0.3s;
 }
 
 /* Exchange Icon Hover Effect */
 .swap-icon:hover {
-    color: #004d40; /* Darker teal on hover */
+    color: #6a1b9a; /* Darker purple on hover */
 }
 
 /* Get Exchange Rates Button */
 button {
-    background-color: #00c853; /* Vibrant green */
+    background-color: #ab47bc; /* Medium purple */
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     border: none;
-    padding: 12px 24px;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
     width: 100%;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 /* Button Hover Effect */
 button:hover {
-    background-color: #009624; /* Darker green on hover */
+    background-color: #8e24aa; /* Darker purple on hover */
 }
 
 /* Result Display */
 .result {
-    color: #004d40; /* Teal color for results */
+    color: #6a1b9a; /* Purple for result text */
     font-size: 1.2rem;
     margin-top: 1rem;
 }
