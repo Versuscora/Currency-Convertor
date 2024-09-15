@@ -1,105 +1,116 @@
-* {
+/* Overall Background */
+body {
+    background: linear-gradient(135deg, #e0f7fa, #ffffff); /* Light blue and white gradient */
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-color: #F5EDED;
+    height: 100vh;
 }
 
+/* Container for Currency Converter */
 .container {
-    background-color: #E2DAD6;
-    width: 90vh; /* Increased width */
-    min-height: 55vh; /* Adjusted height */
-    border-radius: 1rem;
+    background-color: #ffffff; /* Soft white background */
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     padding: 2rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #34495e;
-}
-
-h2 {
-    color: #6482AD;
+    width: 350px;
     text-align: center;
+    margin: auto;
 }
 
-form {
-    margin: 2rem 0 1rem 0;
+/* Currency Converter Title */
+h1 {
+    color: #004d40; /* Deep teal for title */
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
 }
 
-form select,
-button,
-input {
+/* Input Field Styling */
+input[type="number"] {
     width: 100%;
-    border: none;
-    border-radius: 0.75rem;
-    outline: none;
-    padding: 0.5rem;
-}
-
-form input {
-    border: 1px solid #ced6e0;
-    font-size: 1.2rem;
-    height: 3rem;
-    padding-left: 0.5rem;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
     margin-bottom: 1rem;
-}
-
-.dropdown {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1rem;
-}
-
-.dropdown i {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    color: #16a085;
-}
-
-/* Increase the width of the select container and adjust padding */
-.select-container {
-    display: flex;
-    align-items: center;
-    border: 1px solid lightslategray;
-    border-radius: 0.5rem;
-    padding: 0.5rem;  /* Updated padding for better spacing */
-    width: 60%;       /* Updated width to accommodate flag and dropdown comfortably */
-}
-
-.select-container img {
-    max-width: 1.75rem; /* Ensure the flag images are not too large */
-    margin-right: 0.5rem; /* Adds a bit of space between the flag and the dropdown */
-}
-
-/* Ensure the dropdown takes the remaining width */
-.select-container select {
-    width: calc(100% - 2rem); /* Subtracting the approximate width of the flag and padding */
-    border: none;  /* Removing any default styling */
-}
-
-/* Adjusting form elements to ensure alignment and uniformity */
-form select, form button, form input {
-    height: 3rem;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
     outline: none;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
 }
 
-/* Styling for the button to ensure it's centered and visually appealing */
-form button {
-    background-color: #6482AD;  /* A greener shade for a fresh look */
-    color: white;
-    font-size: 1.15rem;
+/* Dropdown Containers */
+.select-container {
+    display: inline-block;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #ffffff; /* White background for dropdown */
+    width: 140px;
+}
+
+/* Dropdowns */
+select {
+    width: 100%;
+    padding: 5px;
+    font-size: 1rem;
+    border: none;
+    background-color: transparent;
+}
+
+/* Flag Image Styling */
+.select-container img {
+    width: 24px; /* Ensure flag fits perfectly */
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+/* Exchange Icon Styling */
+.swap-icon {
+    font-size: 1.5rem;
+    color: #009688; /* Teal color */
     cursor: pointer;
-    border: none; /* Removing default borders */
+    transition: color 0.3s;
 }
 
-form button:hover {
-    background-color: #1abc9c;
+/* Exchange Icon Hover Effect */
+.swap-icon:hover {
+    color: #004d40; /* Darker teal on hover */
+}
+
+/* Get Exchange Rates Button */
+button {
+    background-color: #00c853; /* Vibrant green */
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #009624; /* Darker green on hover */
+}
+
+/* Result Display */
+.result {
+    color: #004d40; /* Teal color for results */
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+/* Adjust the flag and select elements on smaller screens */
+@media (max-width: 400px) {
+    .select-container {
+        width: 100%;
+        margin: 10px 0;
+    }
 }
