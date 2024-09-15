@@ -1,84 +1,95 @@
-*{
+* {
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
-body{
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #323C57
-    ;
-    
+    background-color: #2E4053;
+    font-family: 'Arial', sans-serif;
+}
 
-}
-.amount{
-    font-size: 1rem;
-}
-.container{
-    background-color:#fff;
+.container {
+    background-color: #f0f0f0;
     width: 40vh;
-    min-height:45vh;
+    min-height: 50vh;
     border-radius: 1rem;
     padding: 2rem;
-    font-size: 1rem;
-    font-family: sans-serif;
-   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-form{
-    margin:2rem 0 1rem 0;
 
+.title {
+    text-align: center;
+    color: #28B463;
 }
-form ,select,button,input{
-    width: 100%;
-    border: none;
-    border-radius: 0.75rem;
-    outline: none;
-}
-form input{
 
-    border: 1px solid lightslategray;
+.amount p, .from p, .to p {
+    color: #34495E;
+    font-weight: bold;
+}
+
+.amount input {
+    border: 1px solid #BDC3C7;
     font-size: 1.2rem;
     height: 3rem;
     padding-left: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
 }
-.dropdown{
-    display:flex ;
+
+.dropdown {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 2rem;
-    
-}   
-.dropdown i{
-    font-size: 1.5rem;
-    margin-top: 1rem;
 }
+
+.dropdown i {
+    font-size: 1.5rem;
+    color: #28B463;
+}
+
+.select-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #BDC3C7;
+    border-radius: 0.5rem;
+    padding: 0.2rem 0.5rem;
+}
+
 .select-container img {
     max-width: 1.75rem;
+    margin-right: 0.5rem;
+}
 
-}
-.select-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid lightslategray;
-    border-radius: 0.5rem;
-    width: 6rem;
-    
-}
-.select-container select{
+.select-container select {
+    border: none;
     font-size: 1rem;
-    width: auto;
-}
-.msg{
-    margin: 2rem 0 2rem 0;
+    background-color: transparent;
 }
 
-form button{
- height: 3rem;
- background-color: #af4d98;
- color: #f4e4ba;
- font-size: 1.15rem;
- cursor: pointer;
+.msg {
+    margin: 2rem 0;
+    color: #1F618D;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+form button {
+    height: 3rem;
+    background-color: #28B463;
+    color: #f0f0f0;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #239B56;
 }
