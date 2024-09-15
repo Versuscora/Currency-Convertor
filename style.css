@@ -12,105 +12,125 @@ body {
 
 /* Container for Currency Converter */
 .container {
-    background-color: #fafafa; /* Light grey background for contrast */
-    border-radius: 10px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    padding: 1.5rem;
-    width: 300px; /* Reduced width */
+    background-color: #fafafa; /* Light grey background */
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Slightly heavier shadow for depth */
+    padding: 2rem;
+    width: 360px; /* Slightly wider for better layout */
     text-align: center;
     margin: auto;
 }
 
 /* Currency Converter Title */
 h1 {
-    color: #6a1b9a; /* Dark purple for title */
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
+    color: #6a1b9a; /* Dark purple */
+    font-size: 1.8rem; /* Slightly larger */
+    font-weight: 600;
+    margin-bottom: 1.5rem;
 }
 
 /* Input Field Styling */
 input[type="number"] {
     width: 100%;
-    padding: 10px;
-    font-size: 1.1rem;
-    border-radius: 5px;
-    border: 1px solid #cccccc;
-    margin-bottom: 1rem;
+    padding: 12px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    border: 1px solid #d1d1d1;
+    margin-bottom: 1.2rem;
     outline: none;
     background-color: #f9f9f9;
     box-sizing: border-box;
 }
 
-/* Dropdown Containers */
-.select-container {
-    display: inline-block;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
-    background-color: #ffffff;
-    width: 120px; /* Reduced width for dropdowns */
+/* Label for Amount */
+label {
+    display: block;
+    color: #8e24aa;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
 }
 
-/* Dropdowns */
+/* Dropdown Containers */
+.select-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/* Dropdowns Styling */
 select {
-    width: 100%;
-    padding: 5px;
+    width: 40%;
+    padding: 8px;
     font-size: 1rem;
-    border: none;
-    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #d1d1d1;
+    background-color: #ffffff;
+    appearance: none;
 }
 
 /* Flag Image Styling */
 .select-container img {
-    width: 20px; /* Adjust flag size */
-    margin-right: 8px;
+    width: 25px;
+    margin-right: 10px;
     vertical-align: middle;
 }
 
-/* Exchange Icon Styling */
+/* Swap Icon */
 .swap-icon {
-    font-size: 1.3rem;
-    color: #8e24aa; /* Lighter purple for swap icon */
+    font-size: 1.5rem;
+    color: #8e24aa; /* Medium purple */
     cursor: pointer;
-    transition: color 0.3s;
+    padding: 0 10px;
+    transition: color 0.3s ease-in-out;
 }
 
-/* Exchange Icon Hover Effect */
 .swap-icon:hover {
-    color: #6a1b9a; /* Darker purple on hover */
+    color: #6a1b9a; /* Darker purple */
 }
 
 /* Get Exchange Rates Button */
 button {
-    background-color: #ab47bc; /* Medium purple */
+    background-color: #ab47bc;
     color: white;
     font-size: 1.1rem;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 12px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease-in-out;
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    font-weight: bold;
 }
 
 /* Button Hover Effect */
 button:hover {
-    background-color: #8e24aa; /* Darker purple on hover */
+    background-color: #8e24aa;
 }
 
 /* Result Display */
 .result {
-    color: #6a1b9a; /* Purple for result text */
+    color: #6a1b9a;
     font-size: 1.2rem;
     margin-top: 1rem;
 }
 
-/* Adjust the flag and select elements on smaller screens */
-@media (max-width: 400px) {
-    .select-container {
+/* Adjust layout on smaller screens */
+@media (max-width: 480px) {
+    .container {
         width: 100%;
-        margin: 10px 0;
+        padding: 1.5rem;
+    }
+
+    .select-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    select {
+        width: 100%;
+        margin-top: 8px;
     }
 }
