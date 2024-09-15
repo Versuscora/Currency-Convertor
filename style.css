@@ -14,8 +14,8 @@ body {
 
 .container {
     background-color: #f8f9fa;
-    width: 40vh;
-    min-height: 45vh;
+    width: 90vh; /* Increased width */
+    min-height: 55vh; /* Adjusted height */
     border-radius: 1rem;
     padding: 2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -63,7 +63,8 @@ form input {
 }
 
 .select-container img {
-    max-width: 1.75rem;
+    max-width: 1.75rem; /* Smaller flag for better fit */
+    margin-right: 0.5rem; /* Added margin for spacing */
 }
 
 .select-container {
@@ -72,7 +73,9 @@ form input {
     align-items: center;
     border: 1px solid #ced6e0;
     border-radius: 0.5rem;
-    width: 6rem;
+    width: 100%; /* Adjusted width to fill select container */
+    padding: 0.5rem; /* Added padding for better alignment */
+    margin: 0.5rem 0; /* Added margin for spacing */
 }
 
 .select-container select {
